@@ -1,1 +1,2 @@
-Gluon site config for Freifunk Karlsruhe (gluon v2015.1.1)
+Gluon site config for Freifunk Karlsruhe (stable)
+v2015.1.x
