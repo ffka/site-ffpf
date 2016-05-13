@@ -60,13 +60,16 @@ GLUON_SITE_PACKAGES += \
 	kmod-atl2
 endif
 
-DEFAULT_GLUON_RELEASE := $(shell git --git-dir=$(this_dir)/.git \
-		--work-tree=$(this_dir) describe --tags --always --dirty \
-		--match "v*" \
-		| sed -e 's/^\(v[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
-		| sed -e 's/^\(v[^-]\+\)-\(beta.*\)$$/\1~\2/' \
-		| sed -e 's/^\(v[^~]\+~beta[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
-		| sed -e 's/^v//')
+DEFAULT_GLUON_RELEASE := 0.2.71~beta$(shell date '+%Y%m%d')
+
+#Saved for future use
+# $(shell git --git-dir=$(this_dir)/.git \
+#		--work-tree=$(this_dir) describe --tags --always --dirty \
+#		--match "v*" \
+#		| sed -e 's/^\(v[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
+#		| sed -e 's/^\(v[^-]\+\)-\(beta.*\)$$/\1~\2/' \
+#		| sed -e 's/^\(v[^~]\+~beta[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
+#		| sed -e 's/^v//')
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

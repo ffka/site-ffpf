@@ -16,7 +16,7 @@ Then download and build as follows:
 
     git clone git://github.com/freifunk-gluon/gluon.git         # Get the official Gluon repository
     cd gluon
-    git clone https://github.com/ffka/site-ffka site   			# Get the Freifunk Magdeburg site repository
+    git clone https://github.com/ffka/site-ffka site   			# Get the Freifunk Karlsruhe site repository
     make update                                                 # Fetch all repositories
     ./site/build.sh
 
