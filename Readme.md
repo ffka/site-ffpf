@@ -10,7 +10,7 @@ To compile the firmware you need a working build environment and packages for gi
 
 On Debian GNU/Linux, install like this:
 
-    sudo aptitude install git subversion build-essential gawk unzip libz-dev libncurses-dev
+    sudo apt-get install git subversion python build-essential gawk unzip libz-dev libncurses-dev libssl-dev
 
 Then download and build as follows:
 
