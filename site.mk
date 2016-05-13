@@ -1,11 +1,11 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
-	gluon-alfred \
 	gluon-respondd \
+	gluon-alfred \
 	gluon-autoupdater \
+	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
@@ -15,7 +15,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-wifi-config \
-        gluon-luci-private-wifi \
+	gluon-luci-private-wifi \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-setup-mode \
