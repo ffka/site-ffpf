@@ -60,7 +60,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-atl2
 endif
 
-DEFAULT_GLUON_RELEASE := 0.2.8~beta$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.2.81~exp$(shell date '+%Y%m%d')
 
 #Saved for future use
 # $(shell git --git-dir=$(this_dir)/.git \
@@ -89,3 +89,5 @@ GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+GLUON_ATH10K_MESH ?= 11s
